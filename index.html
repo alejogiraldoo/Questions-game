@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de preguntas</title>
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="empezarContador()">
+    <div class="contador">
+        <h1 id="pantalla">30s</h1>
+        <audio id="audioAlarma">
+            <source src="Audios/alarma.mp3" type="audio/mpeg">
+            Sonido no habilitado
+        </audio>
+    </div>
+    <section class="contenedorPreguntas">
+        <label for="pregunta1">1.¿Con cuántos países comparte Colombia fronteras terrestres?</label>
+        <input type="text" id="pregunta1">
+        <label for="pregunta2">2.El nombre que tenía el actual territorio colombiano antes de la independencia era</label>
+        <input type="text" id="pregunta2">
+        <label for="pregunta3">3.¿Cuál es la capital del Departamento de Amazonas?</label>
+        <input type="text" id="pregunta3">
+        <label for="pregunta4">4.¿Dónde nació el prócer de la independencia Francisco de Paula Santander?</label>
+        <input type="text" id="pregunta4">
+        <label for="pregunta5">5.¿Cuál es la etnia indígena más numerosa de Colombia?</label>
+        <input type="text" id="pregunta5">
+        <button id="reiniciar" onclick="reiniciar()">Reiniciar</button>
+        <button id="listo" onclick="pausar()">Listo</button>
+    </section>
+</body>
+    <!-- JS document -->
+    <script src="main.js"></script>
+</html>
